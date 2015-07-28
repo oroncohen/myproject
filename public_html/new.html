@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+body
+{
+  display: none;
+}
+.tm
+{
+     font-family: sans-serif;
+    font-size: 1em;
+    position: relative;
+    top: -0.45em;
+    color:white;
+}
+svg 
+{
+      background-opacity: 0.4;
+}
+.container
+{
+  width:90%;
+}
+div {
+
+  padding-right:20px;
+}
+circle,
+path {
+  stroke: #000;
+}
+
+path {
+  fill-opacity: .1;
+}
+
+path:hover {
+  fill-opacity: .8;
+}
+#svg1 path:hover {
+  fill-opacity: .2;
+}
+
+#svg2 path {
+  stroke-width:5;
+
+}
+
+image
+{
+  right:10px;
+
+}
+
+.jumbotron
+{
+  padding-top:0px !important;
+}
+</style>
+
+<head>
+<title>Blanket Advantge </title>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:red"><strong><b style="color: rgb(152, 50, 34);font-size:2.3em;">Extri</b>
+<span style="color:white;font-size:2.3em;">com</span>
+<span class="tm">™</span></strong></a>
+    </div>
+    <div>
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Page 1</a></li>
+        <li><a href="#">Page 2</a></li>
+        <li><a href="#">Page 3</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <div class="jumbotron">
+    <h2 style="color:red"><strong>BlanketAdvantage</strong></h2>      
+    <p>This page will grow as we add more and more components </p>      
+  </div>
+<div class="container-fluid">
+<div class="row">
+  <div class="span6" style="float: none; margin: 0 auto;">
+          <table>
+  <tr>
+
+  <div class="dropdown" style="float:left;">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   <span id="selectmap"> Select Map</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" id="map" aria-labelledby="dropdownMenu1">
+    <li><a href="#">Arena</a></li>
+    <li><a href="#">School</a></li>
+    <li><a href="#">Hospital</a></li>
+ 
+  </ul>
+</div>
+<div style="float:left">
+<input type="text" style="width: 40px; height: 35px;" id="o1"/><button  style="height:35px;"onclick=o1.RandPoint($("#o1").val())>Add
+</div>
+<!--   <select onchange="changeMap(this)">
+  <option selected="selected">School</option>
+  <option>Arena</option>
+  <option>Hospital</option>
+  </select> -->
+  
+  </tr>
+  </table>
+  </div>
+</div>
+<div style="float:left;border-right:1px solid;"><svg id="svg1"></svg>
+<div><strong>Total Switches: </strong> <span class="badge" id="numOfSwsvg1">0</span></div></div>
+<div style="float:left"><svg id="svg2"></svg>
+<div><strong>Total Switches: </strong><span class="badge" id="numOfSwsvg2">0</span></div></div>
+
+
+</div>
+<div id="status">Footer</div>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>

@@ -1,0 +1,38 @@
+<!-- home.html -->
+   <div class="jumbotron">
+    <h2 style="color:red"><strong>BlanketAdvantage</strong></h2>      
+    <p>This page will grow as we add more and more components </p>      
+  </div>
+ <div class="dropdown">
+  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+   <span id="selectmap"> Select Map</span>
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu" id="map" aria-labelledby="dropdownMenu1">
+    <li  style="cursor:pointer" ng-click="changeMap('Arena')">Arena</li>
+    <li  style="cursor:pointer" ng-click="changeMap('School')">School</li>
+  	<li  style="cursor:pointer" ng-click="changeMap('Hospital')">Hospital</li>
+ 
+  </ul>
+
+</div>
+
+
+<div class="maps" style="margin-left:100px;">
+
+   <div style="float:left;">
+   <div class="row" style="padding:15px;"><button type="button" class="btn btn-primary btn-xs" value='1'> Add #1 </button>
+   <button type="button" class="btn btn-primary btn-xs" value='5'> Add #5</button>
+   <button type="button" class="btn btn-primary btn-xs" value='10'> Add #10</button>
+   </div>
+   <svg id="svg1" style='border:1px solid;'></svg>
+<div><strong>Total Switches: </strong> <span class="badge" id="numOfSwsvg1">0</span></div></div>
+<div style="float:left">
+   <div class="row" style="padding:15px;"><button type="button" class="btn btn-primary btn-xs"> button</button>
+   <button type="button" class="btn btn-primary btn-xs"> button</button>
+   <button type="button" class="btn btn-primary btn-xs"> button</button></div>
+<svg id="svg2" style='border:1px solid;'></svg>
+<div><strong>Total Switches: </strong><span class="badge" id="numOfSwsvg2">0</span></div></div>
+
+
+</div>

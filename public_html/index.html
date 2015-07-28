@@ -1,0 +1,77 @@
+<!-- index.html -->
+    <!DOCTYPE html>
+  <html ng-app="scotchApp">
+    <head>
+    <style>
+
+.tm {font-family: sans-serif;font-size: 1em;position: relative;top: -0.45em;color:white;}
+svg {background-opacity: 0.4;}
+.container{width:90%;}
+div {padding-right:20px;}
+circle,path {stroke: #000;}
+path {fill-opacity: .7;}
+#svg2 #svg1 path:hover {fill-opacity: .2;}
+#svg2 path {stroke-width:5;}
+#svg1 path {stroke-width:2;}
+image{right:10px;}
+.jumbotron{padding-top:0px !important;}
+#svg1 path {
+  stroke-dasharray: 1;
+  animation: dash 20s linear;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 1000;
+  }
+}
+
+
+
+</style>
+      <!-- SCROLLS -->
+      <!-- load bootstrap and fontawesome via CDN -->
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+
+      <!-- SPELLS -->
+      <!-- load angular and angular route via CDN -->
+          <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+          <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+          <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+          <script type="text/javascript" src="js/main.js"></script>
+          <script src="js/script.js"></script>
+    </head>
+    <body ng-controller="mainController">
+
+        <!-- HEADER AND NAVBAR -->
+        <header>
+            <nav class="navbar navbar-inverse">
+       
+                   <div class="navbar-header">
+      <a class="navbar-brand" href="#" style="color:red"><strong><b style="color: rgb(152, 50, 34);font-size:2.3em;">Extri</b>
+<span style="color:white;font-size:2.3em;">com</span>
+<span class="tm"></span></strong></a>
+    </div>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                </ul>
+            
+            </nav>
+        </header>
+
+     <!-- MAIN CONTENT AND INJECTED VIEWS -->
+    <div id="main">
+  
+        <!-- angular templating -->
+
+            <div ng-view></div>
+    </div>
+
+    </body>
+    </html>
